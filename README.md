@@ -1,27 +1,47 @@
 # Deep_Learning
 
-## General Notes on Deep Learning 
-Numbers works well for ML, images work best for DL. DL is supervised learning. 
-There are 3 types of images
-	○  Black and white - B is 0 and white is 1
-	○ (CV) Grey scale - 0 (black) to 255 (white) - PURE NUMBER CONVERSION  between 0 and 255
-	○ (DL) Color image - R (0 is darkest red to 255 lightest red) +  G (0 to 255) + Blue(0 to 255)  
+## General Notes on Deep Learning
 
-# Introduction of Face Mask Detection Project 
- This is a model to detect whether or not people are wearing masks. We will leverage Keras and Computer Vision algorithm. We will also use transfer learning from Facenet and MobileVnet V2. 
+Deep Learning (DL) is a subset of Machine Learning (ML) that excels in handling complex data types, especially images. While numbers work well for traditional ML models, images are where DL truly shines. Here's a breakdown:
+
+- **Image Types in Deep Learning:**
+  1. **Black and White:** 
+     - Represented as binary values.
+     - **0** for black and **1** for white.
+  2. **Grayscale (Computer Vision):**
+     - Each pixel is a number ranging from **0** (black) to **255** (white).
+     - This is a pure numerical conversion where each value corresponds to a shade of gray.
+  3. **Color Images (Deep Learning):**
+     - Composed of three channels: **Red (R)**, **Green (G)**, and **Blue (B)**.
+     - Each channel has values from **0** (darkest) to **255** (lightest) for its respective color.
+     - A combination of these values creates the full color spectrum.
+
+Deep Learning typically involves supervised learning, where the model learns from labeled data to make predictions or classifications.
+
+# Introduction to the Face Mask Detection Project
+
+This project focuses on building a model to detect whether individuals are wearing masks. We leverage Keras and Computer Vision algorithms, incorporating transfer learning from models like FaceNet and MobileNetV2.
 
 ## Dataset
-- Data collection is of 2 types: manual labelling  and folder dataset (where you have only the object of interest). We will be using folder dataset. 
 
-##Application flow:
-Camera -> takes photo (with background) -> create pretrained model that will crop out only the face (similar to how brain will process it) -> only cropped face image  is  fed It to model -> model predicts whether there is mask or not -> respective CTA 
+- **Data Collection:** 
+  - Two types of data collection methods are considered: manual labeling and using a folder-based dataset (where only the object of interest is present). 
+  - For this project, we utilize a folder-based dataset.
 
-## Model Creation/Learning
-- Data Collection (masked pics and unmasked pics)
-- Data Preprocessing (cropping only the face using pretrained model called facenet)
--Split input and output (convert image into numbers and matrix format leveraging mobileVnetv2)
--Train model
--Test model
--Save the best model as .h5 file
+## Application Flow
 
+1. **Camera:** Captures a photo, including the background.
+2. **Pretrained Model:** A pretrained model crops out only the face from the image, mimicking how the brain processes visual information.
+3. **Model Input:** The cropped face image is fed into the model.
+4. **Prediction:** The model predicts whether a mask is present or not.
+5. **Action:** Trigger the appropriate call to action (CTA) based on the prediction.
+
+## Model Creation and Learning Process
+
+1. **Data Collection:** Gather images of both masked and unmasked faces.
+2. **Data Preprocessing:** Crop only the face using a pretrained model called FaceNet.
+3. **Data Preparation:** Convert the images into numerical and matrix formats using MobileNetV2.
+4. **Model Training:** Train the model using the prepared data.
+5. **Model Testing:** Evaluate the model's performance.
+6. **Model Saving:** Save the best-performing model as an `.h5` file.
 
