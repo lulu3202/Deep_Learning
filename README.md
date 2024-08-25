@@ -1,5 +1,3 @@
-# Deep_Learning
-
 ## General Notes on Deep Learning
 
 Deep Learning (DL) is a subset of Machine Learning (ML) that excels in handling complex data types, especially images. While numbers work well for traditional ML models, images are where DL truly shines. Here's a breakdown:
