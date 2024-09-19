@@ -1,4 +1,4 @@
-#ANN General Notes:
+# ANN General Notes:
 
 ANN Preprocessing steps include - 
 1. Input - 3D is converted into 2D
