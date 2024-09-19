@@ -17,9 +17,9 @@ Deep Learning (DL) is a subset of Machine Learning (ML) that excels in handling 
 Deep Learning typically involves supervised learning, where the model learns from labeled data to make predictions or classifications.
 
 Deep Learning Model Types:
-ANN - is a general-purpose neural network that can be used for a wide range of tasks, including classification, regression, and pattern recognition. 
-CNN - (Convolutional Neural Network): CNN is a type of neural network that is commonly used for image recognition and computer vision tasks.
-RNN - While CNNs are feedforward neural networks that use filters and pooling layers, whereas RNNs feed results back into the network.
+* ANN - is a general-purpose neural network that can be used for a wide range of tasks, including classification, regression, and pattern recognition. 
+* CNN - (Convolutional Neural Network): CNN is a type of neural network that is commonly used for image recognition and computer vision tasks.
+* RNN - While CNNs are feedforward neural networks that use filters and pooling layers, whereas RNNs feed results back into the network.
 
 # Introduction to the Face Mask Detection Project
 
